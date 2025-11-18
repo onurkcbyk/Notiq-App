@@ -22,6 +22,46 @@
 
 ## 🚀 Getting Started
 
+--Built With
+
+Flutter - Cross-platform framework
+
+Dart - Programming language
+
+SQLite - Local database
+
+Provider - State management
+
+Material Design - UI components
+
+--Screenshots
+Home Screen	Note Editor	Settings
+https://via.placeholder.com/200x400/2196F3/FFFFFF?text=Home	https://via.placeholder.com/200x400/4CAF50/FFFFFF?text=Editor	https://via.placeholder.com/200x400/FF9800/FFFFFF?text=Settings
+🔧 Project Structure
+text
+Notiq-App/
+├── lib/
+│   ├── screens/          # UI screens
+│   ├── component/        # Reusable widgets
+│   ├── data/            # Models and enums
+│   ├── services/        # Database layer
+│   └── provider/        # State management
+├── android/             # Android specific files
+├── ios/                # iOS specific files
+└── privacy-policy/     # Privacy policy page
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+--Privacy
+Your privacy is important. Notiq stores all data locally on your device. No data is collected or shared.
+
+--Privacy Policy
+
+--Contact
+Onur Kocabıyık - onurkcbyk@hotmail.com
+
+Project Link: https://github.com/onurkcbyk/Notiq-App
+
 ### Download
 [![Google Play](https://img.shields.io/badge/Google_Play-Coming_Soon-green?logo=google-play)](https://play.google.com)
 [![Direct APK](https://img.shields.io/badge/Download_APK-v1.0.0-blue)](https://github.com/onurkcbyk/Notiq-App/releases)
@@ -31,9 +71,3 @@
 - Dart 3.0+
 - Android SDK / Xcode
 
-### Installation
-```bash
-git clone https://github.com/onurkcbyk/Notiq-App.git
-cd Notiq-App
-flutter pub get
-flutter run
