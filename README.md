@@ -31,28 +31,18 @@ Provider - State management
 
 Material Design - UI components
 
-🔧 Project Structure
-
-Notiq-App/
-├── lib/
-│   ├── screens/          # UI screens
-│   ├── component/        # Reusable widgets
-│   ├── data/            # Models and enums
-│   ├── services/        # Database layer
-│   └── provider/        # State management
-├── android/             # Android specific files
-├── ios/                # iOS specific files
-└── privacy-policy/     # Privacy policy page
-
 📄 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 🔒 Privacy
+
 Your privacy is important. Notiq stores all data locally on your device. No data is collected or shared.
 
 📋 Privacy Policy
 
 📞 Contact
+
 Onur Kocabıyık - onurkcbyk@hotmail.com
 
 Project Link: https://github.com/onurkcbyk/Notiq-App
