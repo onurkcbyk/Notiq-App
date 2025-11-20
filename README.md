@@ -11,12 +11,14 @@
 
 ## ✨ ScreenShots
 
+<img src="screenshots/1.jpeg" width="400" />         <img src="screenshots/2.jpeg" width="400" />
 
-![File List](screenshots/1.jpeg)
-![File List](screenshots/2.jpeg)
-![File List](screenshots/3.jpeg)
-![File List](screenshots/4.jpeg)
-![File List](screenshots/5.jpeg)
+<img src="screenshots/3.jpeg" width="400" />  <img src="screenshots/4.jpeg" width="400" />
+
+<img src="screenshots/5.jpeg" width="400" />
+
+
+
 
 
 
