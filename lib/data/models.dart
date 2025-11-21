@@ -1,5 +1,5 @@
 
-enum NoteCategory { all, personal, work, shopping, ideas }
+enum NoteCategory { all,general, personal, work, shopping, ideas }
 
 class NoteEntry {
   int? id;

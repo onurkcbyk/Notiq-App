@@ -44,6 +44,7 @@ class CategoryFilter extends StatelessWidget {
   String _getCategoryName(NoteCategory category) {
     switch (category) {
       case NoteCategory.all: return 'All';
+      case NoteCategory.general: return 'General';
       case NoteCategory.personal: return 'Personal';
       case NoteCategory.work: return 'Work';
       case NoteCategory.shopping: return 'Shopping';

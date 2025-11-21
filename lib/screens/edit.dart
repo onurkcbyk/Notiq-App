@@ -26,7 +26,7 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
   late NoteEntry currentNote;
   late TextEditingController titleController;
   late TextEditingController contentController;
-  NoteCategory selectedCategory = NoteCategory.all;
+  NoteCategory selectedCategory = NoteCategory.general;
 
   @override
   void initState() {
@@ -40,7 +40,7 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
         title: '',
         date: DateTime.now(),
         isImportant: false,
-        category: NoteCategory.all,
+        category: NoteCategory.general,
       );
       isNoteNew = true;
     } else {
@@ -120,15 +120,15 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
             },
             itemBuilder: (context) => [
               PopupMenuItem(
-                value: NoteCategory.all,
+                value: NoteCategory.general,
                 child: Row(
                   children: [
-                    Icon(Icons.all_out_outlined,
-                        color: selectedCategory == NoteCategory.all
+                    Icon(Icons.note_outlined,
+                        color: selectedCategory == NoteCategory.general
                             ? Theme.of(context).colorScheme.primary
                             : null),
                     SizedBox(width: 12),
-                    Text('All'),
+                    Text('General'),
                   ],
                 ),
               ),
@@ -304,18 +304,18 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
 
   String _getCategoryName(NoteCategory category) {
     switch (category) {
-      case NoteCategory.all: return 'All';
+      case NoteCategory.general: return 'General';
       case NoteCategory.personal: return 'Personal';
       case NoteCategory.work: return 'Work';
       case NoteCategory.shopping: return 'Shopping';
       case NoteCategory.ideas: return 'Ideas';
-      default: return 'All';
+      default: return 'General';
     }
   }
 
   IconData _getCategoryIcon(NoteCategory category) {
     switch (category) {
-      case NoteCategory.all: return Icons.all_out_outlined;
+      case NoteCategory.general: return Icons.all_out_outlined;
       case NoteCategory.personal: return Icons.person_outline;
       case NoteCategory.work: return Icons.work_outline;
       case NoteCategory.shopping: return Icons.shopping_cart_outlined;
@@ -324,9 +324,7 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
     }
   }
 
-  // ✅ DÜZGÜN ÇALIŞAN SAVE METODU
   void handleSave() async {
-    // Önce currentNote'u güncelle
     setState(() {
       currentNote.title = titleController.text;
       currentNote.content = contentController.text;

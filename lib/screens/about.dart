@@ -10,8 +10,12 @@ class AboutScreen extends StatelessWidget {
   }
 
   _launchURL(String url) async {
-    if (await canLaunchUrl(Uri.parse(url))) {
-      await launchUrl(Uri.parse(url));
+    try {
+      await launchUrl(
+        Uri.parse(url),
+        mode: LaunchMode.externalApplication,
+      );
+    } catch (e) {
     }
   }
 
@@ -35,7 +39,6 @@ class AboutScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // APP ICON & NAME
                 Center(
                   child: Column(
                     children: [
@@ -55,7 +58,6 @@ class AboutScreen extends StatelessWidget {
 
                 SizedBox(height: 32),
 
-                // DESCRIPTION
                 Text(
                   'Notiq is a modern and fast note-taking app. '
                       'With dark mode, color customization and many more features, '
@@ -65,18 +67,18 @@ class AboutScreen extends StatelessWidget {
 
                 SizedBox(height: 24),
 
-                // LINKS
+                // AYNI KALDI
                 _buildLinkItem(
                   context,
                   'Privacy Policy',
                   Icons.privacy_tip,
-                      () => _launchURL('https://example.com/privacy'),
+                      () => _launchURL('https://onurkcbyk.github.io/Notiq-App/privacy-policy/'),
                 ),
                 _buildLinkItem(
                   context,
                   'Terms of Service',
                   Icons.description,
-                      () => _launchURL('https://example.com/terms'),
+                      () => _launchURL('https://onurkcbyk.github.io/Notiq-App/terms-of service/'),
                 ),
                 _buildLinkItem(
                   context,
@@ -87,7 +89,6 @@ class AboutScreen extends StatelessWidget {
 
                 Spacer(),
 
-                // COPYRIGHT
                 Center(
                   child: Text(
                     '© 2024 Notiq. All rights reserved.',

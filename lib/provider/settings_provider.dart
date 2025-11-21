@@ -55,6 +55,4 @@ class SettingsProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-// BU METODU SİL! main.dart'ta ThemeData kullanacağız
-// ThemeData get themeData { ... }
 }

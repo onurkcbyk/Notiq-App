@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../provider/settings_provider.dart';
 import '../screens/about.dart';
-
+import 'package:share_plus/share_plus.dart';
 class SettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -78,7 +78,7 @@ class SettingsPage extends StatelessWidget {
                 _ModernSettingItem(
                   icon: Icons.share_outlined,
                   title: 'Share App',
-                  onTap: () {},
+                  onTap: () => _shareApp(context),
                 ),
               ],
             ),
@@ -86,6 +86,12 @@ class SettingsPage extends StatelessWidget {
         ),
       ),
     );
+  }
+  void _shareApp(BuildContext context) {
+    final String text = 'Check out Notiq !';
+    final String appLink = 'https://github.com/onurkcbyk/Notiq-App';
+
+    Share.share('$text $appLink');
   }
 
   void _showTextSizeSlider(BuildContext context) {
