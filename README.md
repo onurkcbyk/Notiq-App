@@ -8,6 +8,20 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License"/>
 </p>
 
+
+## ✨ ScreenShots
+
+<img src="screenshots/1.jpeg" width="400" />         <img src="screenshots/2.jpeg" width="400" />
+
+<img src="screenshots/3.jpeg" width="400" />  <img src="screenshots/4.jpeg" width="400" />
+
+<img src="screenshots/5.jpeg" width="400" />
+
+
+
+
+
+
 ## ✨ Features
 
 - 🎨 **Dark/Light Mode** - Automatic theme switching
@@ -69,4 +83,4 @@ Onur Kocabıyık - onurkcbyk@hotmail.com
 
 Project Link: https://github.com/onurkcbyk/Notiq-App
 
-<p align="center"> <b>If you like this project, don't forget to give it a ⭐!</b> </p> ```
+
